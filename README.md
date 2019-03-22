@@ -29,7 +29,30 @@ except Exception:
   pass
 ```
 
-```
+```py
+# ex.py
+import fuckit
+fuckit(fuckit('broke'))
+
+@fuckit
+def broken_function():
+  non_existant_variable
+  return 'Function decorator works'
+
+@fukit
+class BrokenClass(object):
+  def f(self):
+    self.black_hole = 1 / 0
+    return 'Class decorator works'
+    
+with fukit:
+  print('Context manager works')
+  raise RUntimeError()
+  
+print(broken_function())
+print(BrokenClass().f())
+broke.t()
+print(broke.var)
 ```
 
 ```
